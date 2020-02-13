@@ -31,10 +31,11 @@ $new_config_options['bulk_import_settings']['modules']['Contacts']['custom_befor
 $new_config_options['bulk_import_settings']['modules']['Cases']['sugar_key_field'] = 'id';
 $new_config_options['bulk_import_settings']['modules']['Cases']['external_key_field'] = 'external_key';
 $new_config_options['bulk_import_settings']['modules']['Cases']['sql_query'] = 'select id from cases where id = ?';
-$new_config_options['bulk_import_settings']['relationships']['Contacts']['accounts']['external_key_field_left'] = 'left_external_key';
-$new_config_options['bulk_import_settings']['relationships']['Contacts']['accounts']['external_key_field_right'] = 'right_external_key';
+$new_config_options['bulk_import_settings']['relationships']['Accounts']['contacts']['external_key_field_left'] = 'left_external_key';
+$new_config_options['bulk_import_settings']['relationships']['Accounts']['contacts']['external_key_field_right'] = 'right_external_key';
 $new_config_options['bulk_import_settings']['relationships']['Cases']['accounts']['external_key_field_left'] = 'left_external_key';
 $new_config_options['bulk_import_settings']['relationships']['Cases']['accounts']['external_key_field_right'] = 'right_external_key';
+$new_config_options['bulk_import_settings']['max_records'] = 300;
 
 $configuratorObj->config['search_engine'] = $new_config_options['search_engine'];
 $configuratorObj->config['bulk_import_settings'] = $new_config_options['bulk_import_settings'];
